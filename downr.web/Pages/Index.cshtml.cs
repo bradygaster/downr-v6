@@ -11,7 +11,7 @@ public class IndexModel : PageModel
 
     [BindProperty(SupportsGet = true)]
     public string Slug { get; set; }
-    public IEnumerable<Post> Posts { get; private set; }
+    public List<Post> Posts { get; set; } = new List<Post>();
 
     public IndexModel(ILogger<IndexModel> logger,
             PostService postService,
@@ -32,6 +32,15 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        Posts = GetPostList(0);
+        if(string.IsNullOrEmpty(Slug))
+        {
+            Posts.Clear();
+            Posts.AddRange(GetPostList(0));
+        }
+        else
+        {
+            Posts.Clear();
+            Posts.Add(_postService.GetPostBySlug(Slug));
+        }
     }
 }
