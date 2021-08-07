@@ -36,9 +36,9 @@ pre {
     padding: 10px;
     background-color: #E8EBEC;
     border: dotted 1px #bbb;
+    font-size: .8em;
 }
 pre, code {
-    font-size: .7em;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -47,6 +47,16 @@ pre, code {
     background-color: #328BBC;
     border: none;
 }
+
+    .card-header a {
+        text-decoration: none;
+        color: #E8EBEC;
+    }
+
+        .card-header a:hover {
+            text-decoration: none;
+            color: #DCF4E2;
+        }
 
 /* styling the post header font */
 .card-title, .card-subtitle {

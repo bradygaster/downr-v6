@@ -16,10 +16,10 @@
     <div class="card">
       <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title"><NavLink href="@($"/posts/{post.Slug}")">@post.Title</NavLink></h2>
+            <h2 class="card-title"><a href="@($"/{post.Slug}")" title="Click here to read the post '@post.Title'.">@post.Title</a></h2>
             <h6 class="card-subtitle">posted @post.PublicationDate.Humanize() in @foreach(string category in post.Categories)
                     {
-                        <span class="category">@category</span>
+                        <a title="See a list of all the posts in the '@category' category." href="/category/@category" class="category">@category</a>
                     }
             </h6>
           </div>
