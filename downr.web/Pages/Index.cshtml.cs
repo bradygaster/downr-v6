@@ -22,7 +22,7 @@ public class IndexModel : PageModel
         _options = options;
     }
 
-    private IEnumerable<Post> GetPostList(int page, string category = null)
+    private IEnumerable<Post> GetPostList(int page = 0, string category = null)
     {
         var pageSize = _options.PageSize;
         var posts = _postService.GetPosts(page * pageSize, pageSize, category);
@@ -35,7 +35,7 @@ public class IndexModel : PageModel
         if(string.IsNullOrEmpty(Slug))
         {
             Posts.Clear();
-            Posts.AddRange(GetPostList(0));
+            Posts.AddRange(GetPostList());
         }
         else
         {
