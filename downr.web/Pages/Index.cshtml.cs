@@ -14,8 +14,8 @@ public class IndexModel : PageModel
     public List<Post> Posts { get; set; } = new List<Post>();
 
     public IndexModel(ILogger<IndexModel> logger,
-            PostService postService,
-            DownrOptions options)
+                      PostService postService,
+                      DownrOptions options)
     {
         _logger = logger;
         _postService = postService;
@@ -25,7 +25,7 @@ public class IndexModel : PageModel
     private IEnumerable<Post> GetPostList(int page = 0, string category = null)
     {
         var pageSize = _options.PageSize;
-        var posts = _postService.GetPosts(page * pageSize, pageSize, category);
+        var posts = _postService.GetPosts(page * (pageSize + 1), pageSize, category);
         var postCount = _postService.GetNumberOfPosts(category);
         return posts;
     }
