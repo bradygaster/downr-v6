@@ -6,9 +6,9 @@
 @inject DownrOptions options
 @using Humanizer
 
-<div class="text-center">
-    <h1 class="display-4">@options.Title</h1>
-    <p>@options.IndexPageText</p>
+<div>
+    <h1 class="header">@options.Title</h1>
+    <p class="subheader">@options.IndexPageText</p>
 </div>
 
 @foreach (var post in Model.Posts)

@@ -1,4 +1,29 @@
-﻿/* begin custom downr styles */
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* begin custom downr styles */
+body {
+    font-family: 'Source Sans Pro';
+    font-size: 1.1em;
+    background-color: #E8EBEC;
+}
+
+.header, h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald;
+}
+
+.header {
+    font-size: 5em;
+}
+
+.subheader {
+    font-family: 'Rubik';
+    font-size: 1.1em;
+}
 
 /* mainly used to control image overflow */
 img {
@@ -7,12 +32,14 @@ img {
 }
 
 /* styles any code block */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono");
 pre {
-    font-family: "Roboto Mono", monospace;
-    border: dotted 1px #aaa;
-    background-color: #eee;
-    padding: 5px;
+    padding: 10px;
+    background-color: #E8EBEC;
+    border: dotted 1px #bbb;
+}
+pre, code {
+    font-size: .7em;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* styling the post header background */
@@ -30,6 +57,7 @@ pre {
 .category {
     padding-right: 2px;
     color: #E8EBEC;
+    border-bottom: dotted 1px;
 }
 
 /* end downr styles */
