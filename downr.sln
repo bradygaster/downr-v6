@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31601.41
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "downr.web", "downr.web\downr.web.csproj", "{CEE649BC-F834-4311-8A2C-8F2FF14788AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "downr.abstractions", "downr.abstractions\downr.abstractions.csproj", "{3F49EA18-53AB-44F0-A446-46E1A149BC0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE649BC-F834-4311-8A2C-8F2FF14788AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE649BC-F834-4311-8A2C-8F2FF14788AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE649BC-F834-4311-8A2C-8F2FF14788AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE649BC-F834-4311-8A2C-8F2FF14788AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F49EA18-53AB-44F0-A446-46E1A149BC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F49EA18-53AB-44F0-A446-46E1A149BC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F49EA18-53AB-44F0-A446-46E1A149BC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F49EA18-53AB-44F0-A446-46E1A149BC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9851354C-C9D0-4F4E-9122-8C68BADA0E3C}
+	EndGlobalSection
+EndGlobal
