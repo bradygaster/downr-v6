@@ -13,7 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1.8.0
       with:
-        include-prerelease: True
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
         include-prerelease: true
     - name: Restore
