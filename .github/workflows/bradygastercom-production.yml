@@ -1,4 +1,5 @@
 name: Build and deploy .NET Core application to Web App bradygastercom-production
+on: push
 env:
   AZURE_WEBAPP_NAME: bradygastercom-production
   AZURE_WEBAPP_PACKAGE_PATH: downr.web\published
