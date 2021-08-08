@@ -11,6 +11,10 @@ public class IndexModel : PageModel
 
     [BindProperty(SupportsGet = true)]
     public string Slug { get; set; }
+
+    [BindProperty(SupportsGet = true, Name = "pg")]
+    public int Page { get; set; } = 0;
+
     public List<Post> Posts { get; set; } = new List<Post>();
 
     public IndexModel(ILogger<IndexModel> logger,
@@ -22,10 +26,10 @@ public class IndexModel : PageModel
         _options = options;
     }
 
-    private IEnumerable<Post> GetPostList(int page = 0, string category = null)
+    private IEnumerable<Post> GetPostList(string category = null)
     {
         var pageSize = _options.PageSize;
-        var posts = _postService.GetPosts(page * (pageSize + 1), pageSize, category);
+        var posts = _postService.GetPosts(Page * (pageSize + 1), pageSize, category);
         var postCount = _postService.GetNumberOfPosts(category);
         return posts;
     }

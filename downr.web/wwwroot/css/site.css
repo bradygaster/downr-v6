@@ -9,7 +9,7 @@
 body {
     font-family: 'Source Sans Pro';
     font-size: 1.1em;
-    background-color: #E8EBEC;
+    background-color: #E5E5E1;
 }
 
 .header, h1, h2, h3, h4, h5, h6 {
@@ -34,8 +34,8 @@ img {
 /* styles any code block */
 pre {
     padding: 10px;
-    background-color: #E8EBEC;
-    border: dotted 1px #bbb;
+    background-color: #E5E5E1;
+    border: dotted 1px #505050;
     font-size: .8em;
 }
 pre, code {
@@ -44,14 +44,15 @@ pre, code {
 
 /* styling the post header background */
 .card-header {
-    background-color: #328BBC;
+    background: linear-gradient(to left, rgb(81, 43, 212, .8), #4931DE);
     border: none;
+    padding: 30px 0 30px 15px;
 }
 
-    .card-header a {
-        text-decoration: none;
-        color: #E8EBEC;
-    }
+.card-header a {
+    text-decoration: none;
+    color: #E8EBEC;
+}
 
         .card-header a:hover {
             text-decoration: none;
@@ -70,6 +71,17 @@ pre, code {
     border-bottom: dotted 1px;
 }
 
+a {
+    color: #512BD4;
+    text-decoration: none;
+}
+
+    a:Hover {
+        color: #512BD4;
+        text-decoration: none;
+        border-bottom: dotted 1px;
+    }
+
 /* end downr styles */
 
 
@@ -79,10 +91,6 @@ a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-}
-
-a {
-    color: #0077cc;
 }
 
 .btn-primary {
