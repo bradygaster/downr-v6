@@ -62,5 +62,22 @@ namespace downr
             }
             return result;
         }
+
+        public string[] GetCategories()
+		{
+            var categories = new List<string>();
+			foreach (var post in GetPosts())
+			{
+				foreach (var category in post.Categories)
+				{
+                    if(!categories.Contains(category))
+					{
+                        categories.Add(category);
+					}
+				}
+			}
+            categories.Sort();
+            return categories.ToArray();
+		}
     }
 }
