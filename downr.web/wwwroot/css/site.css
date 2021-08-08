@@ -7,8 +7,8 @@
 
 /* begin custom downr styles */
 body {
-    font-family: 'Source Sans Pro';
-    font-size: 1.1em;
+    font-family: 'Open Sans';
+    font-size: .95em;
     background-color: #E5E5E1;
 }
 
@@ -18,11 +18,13 @@ body {
 
 .header {
     font-size: 5em;
+    color: #505050;
 }
 
 .subheader {
     font-family: 'Rubik';
     font-size: 1.1em;
+    color: #505050;
 }
 
 /* mainly used to control image overflow */
